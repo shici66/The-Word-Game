@@ -10,11 +10,11 @@ import java.util.Scanner;
 
 public class fightGame {
     public void gameStart(String name) {
-        System.out.println("╔════════════════════════════════════════╗");
-        System.out.println("🎮 zhangsan 欢迎来到文字格斗游戏 🎮");
-        System.out.println("╚════════════════════════════════════════╝");
         heroCharacter hero = createHero(name);
         System.out.println("创建角色成功：" + hero.name);
+        System.out.println("╔════════════════════════════════════════╗");
+        System.out.println("🎮  "+hero.name+"欢迎来到文字格斗游戏 🎮");
+        System.out.println("╚════════════════════════════════════════╝");
         System.out.println("\uD83C\uDF1F 初始属性:" + "[Hp:" + hero.HP + "/" + hero.maxHP + ",ATK:" + hero.attack + ",DEF:" + hero.defense + "]");
         System.out.println("\uD83C\uDF1F 初始技能:" + hero.getSkills());
 //        添加小怪
@@ -151,6 +151,7 @@ public class fightGame {
                     System.out.println("未知输入，默认继续下一场战斗！");
                 }
             }else{
+                System.out.println("===================================================");
                 System.out.println("你被" + enemy.name + "击败了！");
                 System.out.println("游戏结束！");
                 System.out.println("你的总胜场为" + hero.win);
