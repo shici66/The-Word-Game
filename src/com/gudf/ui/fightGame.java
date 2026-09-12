@@ -146,7 +146,7 @@ public class fightGame {
                     System.out.println("游戏结束！");
                     System.out.println("你的总胜场为" + hero.win);
                     System.out.println("欢迎下次游玩！");
-                    System.exit(0);
+                    return;
                 }else{
                     System.out.println("未知输入，默认继续下一场战斗！");
                 }
@@ -156,7 +156,7 @@ public class fightGame {
                 System.out.println("游戏结束！");
                 System.out.println("你的总胜场为" + hero.win);
                 System.out.println("欢迎下次游玩！");
-                System.exit(0);
+                return;
             }
         }
 

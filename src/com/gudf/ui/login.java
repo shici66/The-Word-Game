@@ -85,8 +85,7 @@ public class login {
                     System.out.println("登录成功");
                     fightGame gh = new fightGame();
                     gh.gameStart(users.get(index).getUsername());
-
-                    break;
+                    return;
                 } else {
                     num++;
                     System.out.println("密码错误，请重新输入");

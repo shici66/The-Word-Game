@@ -1,0 +1,6 @@
+name:zhangsan
+HP:143
+maxHP:200
+attack:20
+defense:5
+win:2
